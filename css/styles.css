@@ -49,6 +49,10 @@ html {
   display: none;
 }
 
+#one {
+  display: block;
+}
+
 .bayan__link {
   text-decoration: none;
 }
