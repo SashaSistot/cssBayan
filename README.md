@@ -1,1 +1,1 @@
-https://${SashaSistot}.github.io/cssBayan/cssBayan/index.html
+https://sashasistot.github.io/cssBayan/
