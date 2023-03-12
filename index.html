@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>css Bayan</title>
 </head>
@@ -13,36 +12,83 @@
     <h1 class="bayan__header">CSS Bayan</h1>
   </header>
   <main class="main">
-    <details class="bayan__details" open>
-      <summary class="bayan__summary">1. Design is at your discretion</summary>
-      <div class="bayan__item-container">
-        <img class="bayan__item" src="./assets/img/1.jpg" alt="Design is at your discretion">
-      </div> 
-    </details>
-    <details class="bayan__details">
-      <summary class="bayan__summary">2. Implement responsive design with three breakpoints</summary>
-      <div class="bayan__item-container">
-        <img class="bayan__item" src="./assets/img/2.jpg" alt="Implement responsive design with three breakpoints">
-      </div>
-      </details>
-      <details class="bayan__details">
-        <summary class="bayan__summary">3. There should be icon for state of</summary>
-        <div class="bayan__item-container">
-          <img class="bayan__item" src="./assets/img/3.jpg" alt="There should be icon for state of">
-        </div>
-      </details>
-      <details class="bayan__details">
-        <summary class="bayan__summary">4. Implement visual effects when the cursor</summary>
-        <div class="bayan__item-container">
-          <img class="bayan__item" src="./assets/img/4.jpg" alt="Implement visual effects when the cursor">
-        </div>
-      </details>
-      <details class="bayan__details">
-        <summary class="bayan__summary">5. Smooth transitions are applied for changing of memes</summary>
-        <div class="bayan__item-container">
-          <img class="bayan__item" src="./assets/img/5.jpg" alt="Smooth transitions are applied for changing of memes">
-        </div>
-      </details>
-    </main>  
+    <div class="bayan">
+      <section class="bayan__details" id="one">
+        <a class="bayan__link" href="#one">
+          <div class="bayan__summary">
+            <p class="text">
+              1. Design is at your discretion
+            </p>
+            <p class="icon">
+              +
+            </p>
+          </div>
+          <div class="bayan__item-container">
+            <img class="bayan__item" src="./assets/img/1.jpg" alt="Design is at your discretion">
+          </div>
+        </a> 
+      </section>
+      <section class="bayan__details" id="two">
+        <a class="bayan__link" href="#two">
+          <div class="bayan__summary">
+            <p class="text">
+              2. Implement responsive design with three breakpoints
+            </p>
+            <p class="icon">
+              +
+            </p>
+          </div>
+          <div class="bayan__item-container">
+            <img class="bayan__item" src="./assets/img/2.jpg" alt="Implement responsive design with three breakpoints">
+          </div>
+        </a>
+      </section>
+      <section class="bayan__details" id="tree">
+        <a href="#tree" class="bayan__link">
+          <div class="bayan__summary">
+            <p class="text">
+              3. There should be icon for state of
+            </p>
+            <p class="icon">
+              +
+            </p>
+          </div>
+          <div class="bayan__item-container">
+            <img class="bayan__item" src="./assets/img/3.jpg" alt="There should be icon for state of">
+          </div>
+        </a>
+      </section>
+      <section class="bayan__details" id="four">
+        <a href="#four" class="bayan__link">
+          <div class="bayan__summary">
+            <p class="text">
+              4. Implement visual effects when the cursor
+            </p>
+            <p class="icon">
+              +
+            </p>
+          </div>
+          <div class="bayan__item-container">
+            <img class="bayan__item" src="./assets/img/4.jpg" alt="Implement visual effects when the cursor">
+          </div>
+        </a>
+      </section>
+      <section class="bayan__details" id="five">
+        <a href="#five" class="bayan__link">
+          <div class="bayan__summary">
+            <p class="text">
+              5. Smooth transitions are applied for changing of memes
+            </p>
+            <p class="icon">
+              +
+            </p>
+          </div>
+          <div class="bayan__item-container">
+            <img class="bayan__item" src="./assets/img/5.jpg" alt="Smooth transitions are applied for changing of memes">
+          </div>
+        </a>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
