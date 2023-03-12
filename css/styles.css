@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Inika;
+    src: url("../assets/fonts/Inika/Inika-Bold.ttf");
+    font-weight: 700;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+    
+html {
+  scroll-behavior: smooth;
+}
+    
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+  
+.main,
+.header {
+  max-width: 1920px;
+  width: 50%;
+  margin: 0 auto;
+  font-family: Inika;
+}
+  
+.batan__header {
+  font-size: 5em;
+}
+  
+.bayan__item-container {
+  display: flex;
+  justify-content: center
+}
+  
+.bayan__details {
+  cursor: pointer;
+}
+  
+.bayan__summary::-webkit-details-marker {
+  display: none;
+}
+  
+.bayan__summary::-moz-list-bullet {
+  list-style-type: none;
+}
+  
+.bayan__summary::marker {
+  display: none;
+}
+
+.bayan__summary:after {  
+  content: "+";
+  transition: transform .5s;
+}
+  
+.bayan__summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: .3em .5em .3em .4em;
+  font-size: 3em;
+  color: blue;
+  border-top: solid .05em gray;
+}
+
+.bayan__details[open] > .bayan__summary:after {
+  transform: rotateZ(45deg);
+}
+
+.bayan__item-container {
+  margin: 2em;
+}
