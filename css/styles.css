@@ -26,8 +26,8 @@ html {
   font-family: Inika;
 }
   
-.batan__header {
-  font-size: 5em;
+.bayan__header {
+  font-size: 400%;
 }
   
 .bayan__item-container {
@@ -51,7 +51,7 @@ html {
   display: none;
 }
 
-.bayan__summary:after {  
+.bayan__summary:after {
   content: "+";
   transition: transform .5s;
 }
@@ -60,16 +60,72 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: .3em .5em .3em .4em;
-  font-size: 3em;
+  align-items: flex-start;
+  padding: 3% 5% 3% 4%;
+  font-size: 400%;
   color: blue;
   border-top: solid .05em gray;
+  transition: 1s;
 }
 
 .bayan__details[open] > .bayan__summary:after {
   transform: rotateZ(45deg);
+  color: black;
+}
+
+.bayan__details[open] > .bayan__summary {
+  color: black;
+  transition: 1s;
 }
 
 .bayan__item-container {
   margin: 2em;
+}
+
+.bayan__item {
+  width: 50%
+}
+
+@media (max-width: 820px) {
+  .main,
+  .header {
+    max-width: 820px;
+  }
+
+  .bayan__summary {
+    padding: .3% .5% .3% .4%;
+    font-size: 100%;
+    color: rgb(179, 0, 255);
+    border-top: solid .01em rgb(0, 0, 0);
+  }
+
+  .batan__header {
+    font-size: 200%;
+  }
+
+  .bayan__item {
+    width: 100%
+  }
+}
+
+@media (max-width: 320px) {
+  .main,
+  .header {
+    max-width: 320px;
+  }
+
+  .bayan__summary {
+    padding: .3% .5% .3% .4%;
+    font-size: 50%;
+    border-top: solid .01em rgb(0, 0, 0);
+    color: rgb(255, 0, 132);
+  }
+
+  .bayan__header {
+    font-size: 100%;
+  }
+
+  .bayan__item {
+    width: 100%
+  }
 }
