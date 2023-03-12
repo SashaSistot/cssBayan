@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Inika;
+    src: url("../assets/fonts/Inika/Inika-Bold.ttf");
+    font-weight: 700;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+    
+html {
+  scroll-behavior: smooth;
+}
+    
+* {
+  box-sizing: border-box;
+}
+  
+.main,
+.header {
+  max-width: 1920px;
+  width: 70%;
+  margin: 0 auto;
+  font-family: Inika;
+}
+  
+.bayan__header {
+  font-size: 400%;
+}
+  
+.bayan__item-container {
+  display: flex;
+  justify-content: center
+}
+  
+.bayan {
+  cursor: pointer;
+}
+  
+.bayan__summary::-webkit-details-marker {
+  display: none;
+}
+  
+.bayan__summary::-moz-list-bullet {
+  list-style-type: none;
+}
+  
+.bayan__summary::marker {
+  display: none;
+}
+
+#one {
+  display: block;
+}
+
+.bayan__link {
+  text-decoration: none;
+}
+  
+.bayan__summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3% 5% 3% 4%;
+  font-size: 300%;
+  color: blue;
+  border-top: solid .05em gray;
+  transition: 1s;
+}
+
+.icon {
+  display: none;
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.bayan__item-container {
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  transition: 2s;
+}
+
+.bayan__item {
+  margin-bottom: 7em;
+  transition: 2s;
+}
+
+.bayan__details:hover > .bayan__link > .bayan__summary {
+  color: black;
+  transition: 2s;
+}
+
+.bayan__details:hover > .bayan__link > .bayan__summary > .icon {
+  transform: rotateZ(45deg);
+  transition: 2s;
+}
+
+.bayan:hover .icon {
+  display: block;
+  transition: 2s;
+}
+
+.bayan__details:hover .bayan__item-container {
+  height: 100%;
+  opacity: 1;
+  transition: 2s;
+}
+
+.bayan__details:hover > .bayan__link > .bayan__item-container > .bayan__item {
+  margin-bottom: 7em;
+}
+
+.bayan__details:target .bayan__item-container {
+  height: 100%;
+  opacity: 1;
+}
+
+.bayan__details:target .bayan__summary > .icon{
+  display: block;
+  transform: rotateZ(45deg);
+  transition: 2s;
+}
+
+@media (max-width: 820px) {
+  .main,
+  .header {
+    max-width: 820px;
+    width: 80%;
+  }
+
+  .bayan__summary {
+    padding: 10% 5% 10% 4%;
+    font-size: 100%;
+  }
+
+  .bayan__header {
+    font-size: 200%;
+  }
+
+  .bayan__item {
+    width: 50%
+  }
+}
+
+@media (max-width: 320px) {
+  .main,
+  .header {
+    max-width: 320px;
+    width: 90%;
+  }
+
+  .bayan__summary {
+    padding: 10% 5% 10% 4%;
+    font-size: 100%;
+  }
+
+  .bayan__header {
+    font-size: 100%;
+  }
+
+  .bayan__item {
+    width: 50%
+  }
+}
